@@ -3,6 +3,7 @@
 		<div id="cover"></div>
 		<todoheader></todoheader>
 		<todo></todo>
+		<tabs></tabs>
 		<todofooter></todofooter>
 	</div>
 </template>
@@ -11,16 +12,19 @@
 import Todoheader from "./todo/header.vue"
 import Todofooter from "./todo/footer.jsx"
 import Todo from "./todo/todo.vue"
+import Tabs from "./todo/tabs.vue"
 	export default {
 		data() {
 			return {
-				text:"abcd蒋婷婷杨春"
+				text:"abcdefg",   // 标题text
+				todoArr:[]		// 存储todo数据的，用于遍历用的数组
 			}
 		},
 		components:{
 			Todoheader,
 			Todofooter,
-			Todo
+			Todo,
+			Tabs
 		}
 	}
 </script>
